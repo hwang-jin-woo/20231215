@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(55, 55, 198);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+ul, li{
+  list-style: none;
+  
+}
+
+.main {
+  width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100vh;
+  background-color: ffb4a2;
+  transform: translateX(-10px);
+  transition: all 400ms;
+  background-color: lightsalmon;
+}
+.sidebar.sidebar-open {
+  transform: translateX(-288px);
+}
+
+
+.sidemenu{
+  color:black;
+}
+.sidebar > ul > li a:hover{
+  color: rgb(55, 55, 198);
+}
+.sidebar > ul > li ul{ 
+  opacity:0; 
+  transition:0.3s 0.2s;
+}
+.sidebar > ul > li ul li{
+  white-space:nowrap;
+  text-decoration: underline;
+  text-underline-position : under;
+}
+.sidebar > ul > li ul li a:hover{
+  color: rgb(55, 55, 198);
+}
+.sidebar > ul > li:hover ul{
+  opacity:1;
+}
+.sidebar > ul > li ul li:hover{
+  color: rgb(55, 55, 198);
+}
+.menu-icon{
+  position: absolute;
+  left: 290px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.user-icon{
+  font-size: 30px;
+}
+.login-icon{
+  font-size: 30px;
+}
+
+.sidebabrand-icon{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(55, 55, 198);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.sidebarlogin{
+  width: 120px;
+  height: 80px;
+  margin-left: 5px;
+}
+.sidebarmb{
+  width: 120px;
+  height: 80px;
+  margin-right: 7px;
+}
+.sidebarlogin:hover{
+  color:  white;
+  background-color:rgb(55, 55, 198);
+  cursor: pointer;
+}
+.sidebarmb:hover{
+  color:  white;
+  background-color:rgb(55, 55, 198);
+  cursor: pointer;
+}
+
+
+

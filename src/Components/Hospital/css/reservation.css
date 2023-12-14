@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(55, 55, 198);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+ul, li{
+  list-style: none;
+  
+}
+
+.main {
+  width: 100%;
+
+  height: 700px;
+  
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background-color: lightsalmon;
+}
+
+
+.sidemenu{
+  color: black;
+}
+.sidebar > ul > li a:hover{
+  color: rgb(55, 55, 198);
+}
+.sidebar > ul > li ul{ 
+  opacity:0; 
+  transition:0.3s 0.2s;
+}
+.sidebar > ul > li ul li{
+  white-space:nowrap;
+  text-decoration: underline;
+  text-underline-position : under;
+}
+.sidebar > ul > li ul li a:hover{
+  color: rgb(55, 55, 198);
+}
+.sidebar > ul > li:hover ul{
+  opacity:1;
+}
+.sidebar > ul > li ul li:hover{
+  color: rgb(55, 55, 198);
+}
+.menu-icon{
+  position: relative;
+  left: 240px;
+  font-size: 30px;
+}
+.user-icon{
+  font-size: 30px;
+}
+.login-icon{
+  font-size: 30px;
+}
+
+.sidebabrand-icon{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(55, 55, 198);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.sidebarlogin{
+  width: 120px;
+  height: 80px;
+  margin-left: 10px;
+}
+.sidebarmb{
+  width: 120px;
+  height: 80px;
+  margin-left: 10px;
+}
+.sidebarlogin:hover{
+  color:  white;
+  background-color:rgb(55, 55, 198);
+  cursor: pointer;
+}
+.sidebarmb:hover{
+  color:  white;
+  background-color:rgb(55, 55, 198);
+  cursor: pointer;
+}
+.section {
+  width: 120%;
+  height: 100%;
+  background-image: url(hp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-btn1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.login-btn1 :hover{
+  color:  white;
+  background-color:rgb(55, 55, 198);
+  cursor: pointer;
+}
+.login-wrap{
+  position: relative;
+  width: 12%;
+  left: 1300px;
+  top: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  }
+  /*input 아이디 form*/
+  .input-id{
+    border: none;
+    outline:none;
+  }
+  .login-id-wrap{
+      margin: 0px 10px 8px 10px;
+      padding: 10px;
+      border: solid 1px #dadada;
+      background: #fff;
+    }
+  
+  /*input 패스워드박스*/
+  .login-pw-wrap{
+  
+    margin: 0px 10px 8px 10px;
+    padding: 10px;
+    border: solid 1px #dadada;
+    background: #fff;
+  }
+  /*input 패스워드 form*/
+  .input-pw{
+    border: none;
+    outline:none;
+  
+  }
+  .login-btn-wrap{
+    height: 52px;
+    line-height: 55px;
+    margin: 0px 10px 8px 10px;
+    border: solid 1px rgba(0,0,0,.1);
+    background-color: rgb(55, 55, 198);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+  }
+  /*로그인버튼*/
+  .login-btn{   
+    background-color: rgb(55, 55, 198);
+    border: none;
+    color:#fff;
+    font-size: 18px;
+    outline:none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .login-btn1{
+    border: none;
+    font-size: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+  
+  }
+  /*로그인 아래 박스*/
+  .under-login{
+    height: 50px;
+    border-bottom: 1px solid gainsboro;
+    margin: 0px 10px 35px 10px;
+  }
+  
+  
+  .buttons{
+  position: relative;
+
+  }
+  
+  .buttons li{
+    list-style: none;
+    margin: 20px;
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    z-index: 1;
+  }
+  .button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(217, 234, 233);
+    border: solid 5px gainsboro;
+    border-radius: 17px ;
+  }
+  .button:hover{
+    background-color: rgb(217, 234, 233);
+    color: rgb(55, 55, 198);
+  }
+
+  
+  .modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 200px;
+    right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    z-index: 1;
+  }
+  .tap-panels{
+    position: relative;
+    left: 10px;
+  }

@@ -1,0 +1,20 @@
+.bigbox1{
+  text-align: center;
+  color: blue;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.bigbox2{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.bigbox2 .b1 img{
+  width: 100%;
+  margin-top: 15px;
+}
+.bigbox2 .b2{
+  font-size: 1.5rem;
+  padding: 15px;
+}
